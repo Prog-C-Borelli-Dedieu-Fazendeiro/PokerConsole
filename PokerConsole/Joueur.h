@@ -2,11 +2,11 @@
 
 typedef struct Joueur
 {
-    string cPseudo;
+    String sPseudo;
 	int iCapital;
 	int iEtat;
 	Carte kPossession[2];
 }Joueur;
 
-Joueur creation_joueur (char [] cPseudo, int iCapital){
+Joueur creation_joueur (String Pseudo, int iCapital){
 }
