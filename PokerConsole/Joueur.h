@@ -2,11 +2,11 @@
 
 typedef struct Joueur
 {
-    String sPseudo;
+    char sPseudo[256];
 	int iCapital;
 	int iEtat;
 	Carte kPossession[2];
 }Joueur;
 
-Joueur creation_joueur (String Pseudo, int iCapital){
-}
+Joueur creation_joueur (char sPseudoParam, int iCapitalParam);
+void changement_etat_joueur(Joueur j);
