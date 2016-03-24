@@ -31,6 +31,22 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Partie.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Partie.h" />
+		<Unit filename="Phase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Phase.h" />
+		<Unit filename="Table_Physique.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Table_Physique.h" />
+		<Unit filename="cartes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cartes.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

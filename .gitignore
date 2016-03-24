@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.depend
+PokerConsole/obj/Debug/Phase.o
+*.exe
+PokerConsole/obj/Debug/Partie.o
+*.o
