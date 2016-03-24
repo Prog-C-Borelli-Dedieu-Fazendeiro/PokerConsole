@@ -6,14 +6,11 @@
 /**
 Type énuméré comprenant les différentes valeurs que peut prendre la couleur d'une carte
 **/
-typedef enum Couleur Couleur;
-
-enum Couleur
+typedef enum Couleur
 
 {
     Coeur,Carreau,Pique,Trefle
-
-};
+}Couleur;
 
 /**
 Structure permettant de stocker les informations d'une carte.

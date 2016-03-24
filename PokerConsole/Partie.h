@@ -15,3 +15,21 @@ struct Partie
     int iNumPhase; // Numéro de la phase de jeu actuelle
     int iNombreJoueursParticipants; // Nombre total de joueurs à qui il reste des jetons
 } Partie;
+
+/**
+    Lance la partie
+**/
+Procedure Partie(Partie * partie);
+
+/**
+ Crée la liste des joueurs au début de la partie. Le nombre max de joueurs est de 8
+ **/
+Procedure InitialiseListeJoueurs(* listeJoueurs);
+
+/**
+ Supprime de la liste des participants les joueurs qui n’ont plus de jetons
+ **/
+void supprimerJoueursFauches(* listeJoueurs);
+
+
+
