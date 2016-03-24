@@ -56,3 +56,7 @@ PokerConsole/obj/Debug/Phase.o
 PokerConsole/obj/Debug/Partie.o
 *.o
 >>>>>>> origin/master
+*.o
+*.layout
+PokerConsole/obj/Debug/main.o
+*.layout

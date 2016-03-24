@@ -30,7 +30,13 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-std=c99" />
+			<Add option="-std=c99" />
 		</Compiler>
+		<Unit filename="Joueur.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Joueur.h" />
 		<Unit filename="Partie.c">
 			<Option compilerVar="CC" />
 		</Unit>
