@@ -32,3 +32,4 @@ Crée une carte avec sa couleur et sa valeur. Renvoie un pointeur sur la carte cr
 Carte* CreerCarte(int v, Couleur c);
 
 
+
