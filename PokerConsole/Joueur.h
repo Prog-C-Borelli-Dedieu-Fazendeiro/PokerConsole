@@ -1,9 +1,12 @@
-#include <cartes.h>
+#include "cartes.h"
 
 typedef struct Joueur
 {
-    char cPseudo[10];
+    string cPseudo;
 	int iCapital;
 	int iEtat;
-
+	Carte kPossession[2];
 }Joueur;
+
+Joueur creation_joueur (char [] cPseudo, int iCapital){
+}
