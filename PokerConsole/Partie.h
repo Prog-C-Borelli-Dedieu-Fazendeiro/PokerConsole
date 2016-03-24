@@ -19,12 +19,12 @@ struct Partie
 /**
     Lance la partie
 **/
-Procedure Partie(Partie * partie);
+void Partie(Partie * partie);
 
 /**
  Crée la liste des joueurs au début de la partie. Le nombre max de joueurs est de 8
  **/
-Procedure InitialiseListeJoueurs(* listeJoueurs);
+void InitialiseListeJoueurs(* listeJoueurs);
 
 /**
  Supprime de la liste des participants les joueurs qui n’ont plus de jetons
