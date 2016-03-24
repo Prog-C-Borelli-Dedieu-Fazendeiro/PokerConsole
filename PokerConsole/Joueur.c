@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Joueur.h"
+#include <String.h>
 
 
 /*** author : Geoffrey BORELLI ***/
 
 
-Joueur creation_joueur (char sPseudoParam, int iCapitalParam){
-    Joueur j;
-    j.iCapital=iCapitalParam;
-    j.iEtat=1;
-    for (int i=0; i<1; i++) {
+void creation_joueur (Joueur * j, char sPseudoParam, int iCapitalParam){
+    j->sPseudo=sPseudoParam;
+    j->iCapital=iCapitalParam;
+    j->iEtat=1;
+    /*for (int i=0; i<1; i++) {
        j.kPossession[i].cCouleur=-1;
        j.kPossession[i].iValeur=0;
-    }
-
+    }*/
 }
 
 void changement_etat_joueur(Joueur j){
