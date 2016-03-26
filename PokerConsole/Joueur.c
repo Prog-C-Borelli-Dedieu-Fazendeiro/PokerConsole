@@ -7,9 +7,11 @@
 /*** author : Geoffrey BORELLI ***/
 
 
-void creation_joueur (Joueur * j, char sPseudoParam, int iCapitalParam){
-    j->sPseudo=sPseudoParam;
-    j->iCapital=iCapitalParam;
+void creation_joueur (Joueur * j, char * sPseudoParam, int * iCapitalParam){
+    for (int i=0; i<10; i++) {
+        j->sPseudo[i]=sPseudoParam[i];
+    }
+    j->iCapital=*iCapitalParam;
     j->iEtat=1;
     /*for (int i=0; i<1; i++) {
        j.kPossession[i].cCouleur=-1;

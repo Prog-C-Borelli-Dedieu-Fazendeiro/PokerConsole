@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Joueur.h"
-//#include "cartes.h"
+#include "cartes.h"
 #include "Table_Physique.h"
 //#include "Partie.h"
 
@@ -11,10 +11,15 @@
 
 int main()
 {
-    char c='h';
+    char c[10];
+    for (int i=0; i<10; i++) {
+        c[i]='c';
+    }
     int pognon=3000;
     Joueur j;
-    creation_joueur(&j, c, pognon);
-    printf ("nom : %c \n", j.sPseudo);
+    creation_joueur(&j, &c, &pognon);
+    for (int i=0; i<10; i++) {
+        printf ("%c", j.sPseudo[i]);
+    }
     return 0;
 }
