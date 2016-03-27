@@ -60,3 +60,5 @@ PokerConsole/obj/Debug/Partie.o
 *.layout
 PokerConsole/obj/Debug/main.o
 *.layout
+*.layout
+*.o
