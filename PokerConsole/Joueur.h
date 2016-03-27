@@ -1,4 +1,4 @@
-#include "cartes.h"
+#include "Table_physique/cartes.h"
 #include <string.h>
 
 typedef struct Joueur

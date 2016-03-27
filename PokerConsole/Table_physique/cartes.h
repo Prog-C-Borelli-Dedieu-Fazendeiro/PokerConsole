@@ -6,9 +6,9 @@
 /**
 Type énuméré comprenant les différentes valeurs que peut prendre la couleur d'une carte
 **/
-typedef enum Couleur
+typedef enum
 {
-    Coeur,Carreau,Pique,Trefle
+    COEUR,CARREAU,PIQUE,TREFLE
 }Couleur;
 
 /**

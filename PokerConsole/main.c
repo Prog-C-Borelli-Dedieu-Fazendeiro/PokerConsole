@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Joueur.h"
-#include "cartes.h"
+#include "Table_physique/cartes.h"
 #include "Table_Physique.h"
 //#include "Partie.h"
 
