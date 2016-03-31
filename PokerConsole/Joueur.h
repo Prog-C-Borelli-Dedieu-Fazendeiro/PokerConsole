@@ -9,5 +9,5 @@ typedef struct Joueur
 	Carte kPossession[2];
 }Joueur;
 
-void creation_joueur (Joueur * j, char * sPseudoParam, int * iCapitalParam);
-void changement_etat_joueur(Joueur j);
+void creation_joueur (Joueur * j, char * sPseudoParam, int iCapitalParam);
+void changement_etat_joueur(Joueur * j);

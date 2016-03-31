@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Joueur.h"
-#include "Table_physique/cartes.h"
+//#include "Table_physique/cartes.h"
 #include "Table_Physique.h"
 //#include "Partie.h"
 
@@ -17,9 +17,8 @@ int main()
     }
     int pognon=3000;
     Joueur j;
-    creation_joueur(&j, &c, &pognon);
-    for (int i=0; i<10; i++) {
-        printf ("%c", j.sPseudo[i]);
-    }
+    creation_joueur(&j, &c, pognon);
+    changement_etat_joueur(&j);
+    printf("etat : %d", j.iEtat);
     return 0;
 }
