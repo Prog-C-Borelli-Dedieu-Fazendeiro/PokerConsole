@@ -8,7 +8,7 @@
 /**
     Structure regroupant les variables nécessaires au déroulement d'une partie de Poker
 **/
-struct Partie
+typedef struct Partie
 {
     int iMiseDeDepart; // mise de départ de la table
     int iNombreJoueurs; // nombre de joueurs sur la table
