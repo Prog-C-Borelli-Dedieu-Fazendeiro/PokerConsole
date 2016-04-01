@@ -19,7 +19,7 @@ struct Partie
 /**
     Lance la partie
 **/
-void Partie(Partie * partie);
+void lancer_Partie(Partie * partie);
 
 /**
  Crée la liste des joueurs au début de la partie. Le nombre max de joueurs est de 8

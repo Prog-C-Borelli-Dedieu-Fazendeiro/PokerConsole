@@ -5,6 +5,7 @@
 //#include "Table_physique/cartes.h"
 #include "Table_Physique.h"
 //#include "Partie.h"
+#include "IHM.h"
 
 
 /// Auteur :Léo Fazendeiro
@@ -22,5 +23,6 @@ int main()
     mise_joueur(&j, 10000);
     printf("autorisation : %d \n", autorisation);
     printf("capital: %d \n", j.iCapital);
+    menu_principal();
     return 0;
 }
