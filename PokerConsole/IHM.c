@@ -2,7 +2,11 @@
 #include <stdlib.h>
 #include "IHM.h"
 #include "Joueur.h"
-#include "Table_physique\Partie.h"
+#include "Table_Physique\Partie.h"
+#include "libs/lib_liste.h"
+#include <string.h>
+
+#define lgNom 10
 
 void menu_nouvelle_partie() {
     /*Entier iNombre //Nombre de joueurs à créer
@@ -11,11 +15,32 @@ void menu_nouvelle_partie() {
 	Chaine de caractères cdcNom //Nom du joueur
 	Joueur j //Objet de structure joueur
 	Partie p //Objet de structure partie*/
-
-	int iNombre, iCpt, iCapital;
-	char cNom[32];
-	Joueur j;
+	int iNombre, iCapital;
+	char cNom[lgNom];
 	Partie p;
+
+	printf("Choisir nombre de joueurs entre 2 et 8 : ");
+	scanf("%d", &iNombre);
+	while (iNombre<2 || iNombre>8) {
+        printf("Choisir nombre de joueurs entre 2 et 8 : ");
+        scanf("%d", &iNombre);
+        viderBuffer();
+	}
+
+	for (int i=0; i<iNombre; i++){
+        Joueur j;
+        printf("Choisir le nom du joueur : ");
+        scanf("%s", &cNom);
+        printf("Choisir le capital du joueur : ");
+        scanf("%d", &iCapital);
+        creation_joueur(&j, cNom, iCapital);
+        printf("pseudo : %s", j.sPseudo);
+        printf("\n");
+        printf("capital %d", j.iCapital);
+        printf("\n");
+        Ajouter_elem_fin_liste_statique_generique(&p.listeJoueurs, &j, sizeof(Joueur));
+	}
+	//lancer_Partie(&p);
 
 	/*Ecrire(“Choisir nombre de joueurs entre 2 et 8”)
 	Lire(iNombre)

@@ -18,9 +18,13 @@ int main()
     }
     int pognon=3000;
     Joueur j;
-    creation_joueur(&j, &c, pognon);
+    creation_joueur(&j, c, pognon);
     int autorisation=0;
     mise_joueur(&j, 10000);
+    for (int i=0; i<10; i++) {
+        printf("%c", j.sPseudo[i]);
+    }
+    printf("\n");
     printf("autorisation : %d \n", autorisation);
     printf("capital: %d \n", j.iCapital);
     menu_principal();

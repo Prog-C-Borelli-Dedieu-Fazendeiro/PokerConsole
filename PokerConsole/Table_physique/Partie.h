@@ -6,7 +6,7 @@
 /**
     Structure regroupant les variables nécessaires au déroulement d'une partie de Poker
 **/
-struct Partie
+typedef struct Partie
 {
     int iMiseDeDepart; // mise de départ de la table
     int iNombreJoueurs; // nombre de joueurs sur la table
@@ -24,12 +24,12 @@ void lancer_Partie(Partie * partie);
 /**
  Crée la liste des joueurs au début de la partie. Le nombre max de joueurs est de 8
  **/
-void InitialiseListeJoueurs(* listeJoueurs);
+//void InitialiseListeJoueurs(* listeJoueurs);
 
 /**
  Supprime de la liste des participants les joueurs qui n’ont plus de jetons
  **/
-void supprimerJoueursFauches(* listeJoueurs);
+//void supprimerJoueursFauches(* listeJoueurs);
 
 
 
