@@ -6,9 +6,6 @@
 #include "Table_Physique.h"
 //#include "Partie.h"
 
-
-/// Auteur :Léo Fazendeiro
-
 int main()
 {
     char c[10];
