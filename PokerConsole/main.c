@@ -18,7 +18,9 @@ int main()
     int pognon=3000;
     Joueur j;
     creation_joueur(&j, &c, pognon);
-    changement_etat_joueur(&j);
-    printf("etat : %d", j.iEtat);
+    int autorisation=0;
+    mise_joueur(&j, 10000);
+    printf("autorisation : %d \n", autorisation);
+    printf("capital: %d \n", j.iCapital);
     return 0;
 }

@@ -10,4 +10,6 @@ typedef struct Joueur
 }Joueur;
 
 void creation_joueur (Joueur * j, char * sPseudoParam, int iCapitalParam);
-void changement_etat_joueur(Joueur * j);
+void active_joueur (Joueur * j);
+void desactive_joueur (Joueur * j);
+int mise_joueur (Joueur * j, int mise);
