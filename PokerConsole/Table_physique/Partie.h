@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "../libs/lib_liste.h"
 
 #define NBRCARTE
 
@@ -21,17 +22,17 @@ typedef struct Partie
 /**
     Lance la partie
 **/
-void Partie(Partie * partie);
+void lancerPartie(Partie * partie);
 
 /**
  Crée la liste des joueurs au début de la partie. Le nombre max de joueurs est de 8
  **/
-void InitialiseListeJoueurs(* listeJoueurs);
+void InitialiseListeJoueurs(Liste_statique_generique * listeJoueurs);
 
 /**
  Supprime de la liste des participants les joueurs qui n’ont plus de jetons
  **/
-void supprimerJoueursFauches(* listeJoueurs);
+void supprimerJoueursFauches(Liste_statique_generique * listeJoueurs);
 
 
 

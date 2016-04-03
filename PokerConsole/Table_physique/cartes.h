@@ -29,3 +29,6 @@ Carte* CreerCarte(int v, Couleur c);
 
 
 
+void afficherCarte (Carte * carte);
+
+

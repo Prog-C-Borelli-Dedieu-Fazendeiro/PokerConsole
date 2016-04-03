@@ -13,3 +13,8 @@ void supprimerCarte(Carte * carte){
     free(carte);
 }
 
+void afficherCarte (Carte * carte){
+    printf("Couleur : %s",carte->cCouleur);
+    printf("Valeur : %d",carte->iValeur);
+}
+
