@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "Joueur.h"
-#include "Table_physique/cartes.h"
-#include "Table_Physique.h"
-#include "Partie.h"
+//#include "Joueur.h"
+//#include "Table_physique/cartes.h"
+//#include "Table_Physique.h"
+//#include "Table_Physique\Partie.h"
 #include "IHM.h"
 
 

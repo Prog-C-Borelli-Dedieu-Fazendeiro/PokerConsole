@@ -3,10 +3,27 @@
 #include "IHM.h"
 #include "Joueur.h"
 #include "Table_Physique\Partie.h"
+#include "Table_Physique\cartes.h"
 #include "libs/lib_liste.h"
 #include <string.h>
 
 #define lgNom 10
+
+void Afficher_Joueur(Joueur * j) {
+    printf("pseudo : %s", j->sPseudo);
+        printf("\n");
+        printf("capital  %d", j->iCapital);
+        printf("\n");
+        printf("Etat  %d", j->iEtat);
+        printf("\n");
+        printf("Cartes : ");
+}
+
+void Afficher_Carte (Carte * kCarte) {
+    printf("[%s", kCarte->cCouleur);
+    printf("%d", kCarte->iValeur);
+    printf("]");
+}
 
 void menu_nouvelle_partie() {
     /*Entier iNombre //Nombre de joueurs à créer
@@ -19,7 +36,6 @@ void menu_nouvelle_partie() {
 	char cNom[lgNom];
 	Partie p;
 
-    creerPartie(&p);
 
 	printf("Choisir nombre de joueurs entre 2 et 8 : ");
 	scanf("%d", &iNombre);
@@ -27,7 +43,7 @@ void menu_nouvelle_partie() {
         printf("Choisir nombre de joueurs entre 2 et 8 : ");
         scanf("%d", &iNombre);
 	}
-
+    creerPartie(&p, iNombre);
 	for (int i=0; i<iNombre; i++){
         Joueur j;
         printf("Choisir le nom du joueur : ");
@@ -39,28 +55,15 @@ void menu_nouvelle_partie() {
         printf("\n");
         printf("capital  %d", j.iCapital);
         printf("\n");
-        Ajouter_elem_fin_liste_statique_generique(&p.listeJoueurs, &j, sizeof(Joueur));
+        Ajouter_elem_fin_liste_statique_generique(p.listeJoueurs, &j, sizeof(Joueur));
 	}
-	//lancer_Partie(&p);
 
-	/*Ecrire(“Choisir nombre de joueurs entre 2 et 8”)
-	Lire(iNombre)
-
-	Tanque (iNombre<2 ou iNombre>8) faire { //Si l’utilisateur rentre un nombre invalide
-		Ecrire(“Choisir nombre de joueurs entre 2 et 8”)
-		Lire(iNombre)
-	Fin tant que
-	Pour (i de 0 à iNombre-1, i pas de 1) faire { //Pour tous les joueurs
-		Ecrire(“Choisir un nom pour le joueur : “, i+1)
-		Lire(cdcNom) //Enregistrement du nom
-		Ecrire(“Choisir un capital pour le joueur : “, i+1)
-		Lire(iCapital) //Enregistrement du capital
-		j=creation_joueur(cdcNom, iCapital) //Création du joueur avec les attribut rentrés précédemment
-		ajout_liste(j, p.listeJoueur) //Ajout du joueur à la liste des joueur de la partie
-	Fin pour
-	Partie() //Lancement de la partie
-	Fin
-*/
+	//void * pfAfficherJoueurs=&Afficher_Joueur;
+	//Afficher_liste_statique_generique(p.listeJoueurs, pfAfficherJoueurs);
+	Carte kCarte;
+	kCarte=CreerCarte(9, 1);
+	/*Afficher_Carte(kCarte);
+	lancer_Partie(&p);*/
 }
 
 void menu_continuer_partie() {
