@@ -19,6 +19,8 @@ void menu_nouvelle_partie() {
 	char cNom[lgNom];
 	Partie p;
 
+    creerPartie(&p);
+
 	printf("Choisir nombre de joueurs entre 2 et 8 : ");
 	scanf("%d", &iNombre);
 	while (iNombre<2 || iNombre>8) {

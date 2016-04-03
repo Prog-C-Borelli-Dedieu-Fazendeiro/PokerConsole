@@ -2,17 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Joueur.h"
-//#include "Table_physique/cartes.h"
+#include "Table_physique/cartes.h"
 #include "Table_Physique.h"
-//#include "Partie.h"
-//<<<<<<< HEAD
+#include "Partie.h"
 #include "IHM.h"
 
 
 /// Auteur :Léo Fazendeiro Geoffrey BORELLI
-//=======
 #include "libs/lib_liste.h"
-//>>>>>>> origin/master
 
 int main()
 {
