@@ -66,3 +66,4 @@ PokerConsole/obj/Debug/main.o
 PokerConsole/PokerConsole.layout
 *.layout
 *.exe -g
+PokerConsole/Phase.c
