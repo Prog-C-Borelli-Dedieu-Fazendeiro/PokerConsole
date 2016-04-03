@@ -19,10 +19,18 @@ typedef struct Phase
 }
 
 
+int rand_a_b(int a, int b)
+
+
 /**
     Créé une liste de cartes non mélangées
  **/
- creerDeck(* listeCartes)
+Liste_statique_generique* creerDeck()
+
+/**
+    Mélange une liste de cartes en les ajoutant dans une pile
+ **/
+Pile_statique_generique* melangerDeck(Liste_statique_generique* deck)
 
  /**
     Gère une phase de jeu, c’est à dire chaque tour où l’on distribue les cartes au joueurs et

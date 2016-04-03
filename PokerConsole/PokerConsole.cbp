@@ -31,30 +31,39 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="IHM.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="IHM.h" />
 		<Unit filename="Joueur.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Joueur.h" />
-		<Unit filename="Partie.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="Partie.h" />
-		<Unit filename="Phase.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Phase.h" />
 		<Unit filename="Table_Physique.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Table_Physique.h" />
-		<Unit filename="cartes.c">
+		<Unit filename="Table_physique/Partie.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="cartes.h" />
+		<Unit filename="Table_physique/Partie.h" />
+		<Unit filename="Table_physique/Phase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Table_physique/Phase.h" />
+		<Unit filename="Table_physique/cartes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Table_physique/cartes.h" />
 		<Unit filename="lib_saisie.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lib_saisie.h" />
+		<Unit filename="libs/lib_liste.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libs/lib_liste.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -24,19 +24,18 @@ void menu_nouvelle_partie() {
 	while (iNombre<2 || iNombre>8) {
         printf("Choisir nombre de joueurs entre 2 et 8 : ");
         scanf("%d", &iNombre);
-        viderBuffer();
 	}
 
 	for (int i=0; i<iNombre; i++){
         Joueur j;
         printf("Choisir le nom du joueur : ");
-        scanf("%s", &cNom);
+        scanf("%s", cNom);
         printf("Choisir le capital du joueur : ");
         scanf("%d", &iCapital);
         creation_joueur(&j, cNom, iCapital);
         printf("pseudo : %s", j.sPseudo);
         printf("\n");
-        printf("capital %d", j.iCapital);
+        printf("capital  %d", j.iCapital);
         printf("\n");
         Ajouter_elem_fin_liste_statique_generique(&p.listeJoueurs, &j, sizeof(Joueur));
 	}

@@ -8,3 +8,8 @@ Carte* CreerCarte(int v, Couleur c){
     carte->iValeur=v;
     return carte;
 }
+
+void supprimerCarte(Carte * carte){
+    free(carte);
+}
+
