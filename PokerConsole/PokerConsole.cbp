@@ -31,10 +31,15 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="IHM.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="IHM.h" />
 		<Unit filename="Joueur.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Joueur.h" />
+		<Unit filename="Partie.h" />
 		<Unit filename="Table_Physique.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -51,18 +56,14 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Table_physique/cartes.h" />
+		<Unit filename="lib_saisie.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib_saisie.h" />
 		<Unit filename="libs/lib_liste.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="libs/lib_liste.h" />
-		<Unit filename="libs/lib_pile.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="libs/lib_pile.h" />
-		<Unit filename="libs/lib_saisie.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="libs/lib_saisie.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

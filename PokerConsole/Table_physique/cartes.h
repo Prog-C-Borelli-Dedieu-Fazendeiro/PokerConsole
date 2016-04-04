@@ -1,3 +1,6 @@
+#ifndef CARTES_H_INCLUDED
+#define CARTES_H_INCLUDED
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -25,10 +28,10 @@ typedef struct carte
 /**
 Crée une carte avec sa couleur et sa valeur. Renvoie un pointeur sur la carte créée
 **/
-Carte* CreerCarte(int v, Couleur c);
+Carte CreerCarte(int v, Couleur c);
 
 
 
-void afficherCarte (Carte * carte);
 
 
+#endif // CARTES_H_INCLUDED
