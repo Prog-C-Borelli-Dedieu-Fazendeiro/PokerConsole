@@ -30,13 +30,7 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add option="-std=c99" />
-			<Add option="-std=c99" />
 		</Compiler>
-		<Unit filename="Joueur.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Joueur.h" />
 		<Unit filename="Partie.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -53,6 +47,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="cartes.h" />
+		<Unit filename="combinaisons.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="combinaisons.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
