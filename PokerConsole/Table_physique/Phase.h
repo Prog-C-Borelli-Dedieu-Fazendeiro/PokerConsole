@@ -19,13 +19,29 @@ typedef struct Phase
 }
 
 
+int rand_a_b(int a, int b)
+
+
 /**
- Créé une liste de cartes non mélangées
+    Créé une liste de cartes non mélangées
  **/
- creerDeck(* listeCartes)
+Liste_statique_generique* creerDeck()
+
+/**
+    Mélange une liste de cartes en les ajoutant dans une pile
+ **/
+Pile_statique_generique* melangerDeck(Liste_statique_generique* deck)
 
  /**
-    Gère une phase de jeu, c’est à dire chaque tour  où l’on distribue les cartes au joueurs et
+    Gère une phase de jeu, c’est à dire chaque tour où l’on distribue les cartes au joueurs et
     qui se termine lorsque l’on reste qu’un joueur non couché
  **/
 Joueur phase(Partie  partie ,Phase  phase)
+
+
+/**
+    Gère un tour de parole, c’est à dire le tour qui suit la découverte d’une carte commune.
+    Se termine lorsque tous les joueurs ont parlé un joueur peut entre 1 pour suivre, 2 pour se coucher ou 3 pour passer
+**/
+tourDeParole (* listeJoueurs, Partie  partie ,Phase  phase)
+

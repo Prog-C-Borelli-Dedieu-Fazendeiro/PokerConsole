@@ -1,3 +1,6 @@
+#ifndef CARTES_H_INCLUDED
+#define CARTES_H_INCLUDED
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,9 +9,9 @@
 /**
 Type énuméré comprenant les différentes valeurs que peut prendre la couleur d'une carte
 **/
-typedef enum Couleur
+typedef enum couleur
 {
-    Coeur,Carreau,Pique,Trefle
+COEUR=1,CARREAU=2,PIQUE=3,TREFLE=4
 }Couleur;
 
 /**
@@ -16,7 +19,7 @@ Structure permettant de stocker les informations d'une carte.
 Une carte est caractérisée par sa couleur (coeur, carreau, pique ou trèfle),
 et par sa valeur ( de 1 à 13 )
 **/
-typedef struct Carte
+typedef struct carte
 {
     int iValeur; // Valeur de la carte
     Couleur cCouleur; // Couleur de la carte
@@ -25,7 +28,10 @@ typedef struct Carte
 /**
 Crée une carte avec sa couleur et sa valeur. Renvoie un pointeur sur la carte créée
 **/
-Carte* CreerCarte(int v, Couleur c);
+Carte CreerCarte(int v, Couleur c);
 
 
 
+
+
+#endif // CARTES_H_INCLUDED

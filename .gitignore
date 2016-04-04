@@ -60,3 +60,16 @@ PokerConsole/obj/Debug/Partie.o
 *.layout
 PokerConsole/obj/Debug/main.o
 *.layout
+*.layout
+*.o
+*.o
+PokerConsole/PokerConsole.layout
+*.layout
+*.exe -g
+PokerConsole/Phase.c
+PokerConsole/main.c
+*.o
+PokerConsole/PokerConsole.layout
+PokerConsole/PokerConsole.cbp
+*.layout
+PokerConsole/PokerConsole.layout
