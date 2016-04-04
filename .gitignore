@@ -70,3 +70,4 @@ PokerConsole/Phase.c
 PokerConsole/main.c
 *.o
 PokerConsole/PokerConsole.layout
+PokerConsole/obj/Debug/main.o

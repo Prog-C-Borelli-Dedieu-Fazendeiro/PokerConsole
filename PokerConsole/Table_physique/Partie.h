@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "../libs/lib_liste.h"
 
 #define NBRCARTE
 
@@ -12,8 +13,8 @@ typedef struct Partie
 {
     int iMiseDeDepart; // mise de départ de la table
     int iNombreJoueurs; // nombre de joueurs sur la table
-    int listeJoueurs; // liste des joueurs de la partie
-    int listeJoueursParticipants; // liste des joueurs à qui il reste des jetons
+    Liste_statique_generique listeJoueurs; // liste des joueurs de la partie
+    Liste_statique_generique  listeJoueursParticipants; // liste des joueurs à qui il reste des jetons
     int iNumPhase; // Numéro de la phase de jeu actuelle
     int iNombreJoueursParticipants; // Nombre total de joueurs à qui il reste des jetons
 } Partie;
@@ -21,7 +22,7 @@ typedef struct Partie
 /**
     Initialisation des valiables de la partie
 **/
-void creerPartie(Partie * p);
+void creerPartie(Partie * p,int iNbJoueur);
 
 /**
     Lance la partie

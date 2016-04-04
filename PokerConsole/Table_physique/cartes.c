@@ -2,17 +2,19 @@
 #include <stdlib.h>
 #include "cartes.h"
 
- CreerCarte(Carte * carte,int v, Couleur c){
+Carte CreerCarte(int v, Couleur c){
+    Carte * carte= (Carte *)malloc(sizeof(Carte));
     carte->cCouleur=c;
     carte->iValeur=v;
+    return * carte;
 }
 
 void supprimerCarte(Carte * carte){
     free(carte);
 }
 
-void afficherCarte (Carte * carte){
-    printf("\n\n Couleur : %s",carte->cCouleur);
-    printf("\n Valeur : %d",carte->iValeur);
+void CreerCarteSimple(Carte * kCarte, int v, Couleur c) {
+    kCarte->iValeur=v;
+    kCarte->cCouleur=c;
 }
 
