@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Joueur.h"
-//#include "Table_physique/cartes.h"
+#include "Table_physique/cartes.h"
 #include "Table_Physique.h"
 //#include "Partie.h"
 #include "libs/lib_liste.h"
@@ -14,10 +14,10 @@ void testCreationDeck()
     Liste_dynamique_generique * deck;
     deck = creerDeck();
     Pile_statique_generique * deckMelange;
-    deckMelange=melangerDeck(deck);
+   // deckMelange=melangerDeck(deck);
     void * pfAfficheCarte = &afficherCarte;
-    //Afficher_liste_dynamique_generique(deck,pfAfficheCarte);
-    Afficher_pile_statique_generique(deckMelange,pfAfficheCarte);
+    Afficher_liste_dynamique_generique(deck,pfAfficheCarte);
+   // Afficher_pile_statique_generique(deckMelange,pfAfficheCarte);
 
 }
 

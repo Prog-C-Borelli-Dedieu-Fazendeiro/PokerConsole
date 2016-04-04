@@ -20,6 +20,11 @@ typedef struct Partie
 } Partie;
 
 /**
+    Initialisation des valiables de la partie
+**/
+void creerPartie(Partie * p);
+
+/**
     Lance la partie
 **/
 void lancerPartie(Partie * partie);

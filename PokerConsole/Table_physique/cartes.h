@@ -6,9 +6,9 @@
 /**
 Type énuméré comprenant les différentes valeurs que peut prendre la couleur d'une carte
 **/
-typedef enum
+typedef enum couleur
 {
-    COEUR,CARREAU,PIQUE,TREFLE
+COEUR=1,CARREAU=2,PIQUE=3,TREFLE=4
 }Couleur;
 
 /**
@@ -16,7 +16,7 @@ Structure permettant de stocker les informations d'une carte.
 Une carte est caractérisée par sa couleur (coeur, carreau, pique ou trèfle),
 et par sa valeur ( de 1 à 13 )
 **/
-typedef struct Carte
+typedef struct carte
 {
     int iValeur; // Valeur de la carte
     Couleur cCouleur; // Couleur de la carte

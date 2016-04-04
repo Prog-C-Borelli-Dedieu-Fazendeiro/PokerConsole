@@ -39,7 +39,7 @@ void menu_nouvelle_partie() {
         printf("\n");
         printf("capital  %d", j.iCapital);
         printf("\n");
-        Ajouter_elem_fin_liste_statique_generique(&p.listeJoueurs, &j, sizeof(Joueur));
+//        Ajouter_elem_fin_liste_statique_generique(&p.listeJoueurs, &j, sizeof(Joueur));
 	}
 	//lancer_Partie(&p);
 
