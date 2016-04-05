@@ -7,23 +7,31 @@
 //#include "Partie.h"
 #include "libs/lib_liste.h"
 #include "Table_physique/Phase.h"
+#include "IHM.h"
 
 
 void testCreationDeck()
 {
-    Liste_dynamique_generique * deck;
-    deck = creerDeck();
+    Liste_dynamique_generique * deck=(Liste_dynamique_generique*)malloc(sizeof(Liste_dynamique_generique));
+    printf("%c", 5);
+    creerDeck(deck);
     Pile_statique_generique * deckMelange;
-   // deckMelange=melangerDeck(deck);
-    void * pfAfficheCarte = &afficherCarte;
+    deckMelange=melangerDeck(deck);
+    void * pfAfficheCarte = &Afficher_Carte;
     Afficher_liste_dynamique_generique(deck,pfAfficheCarte);
-   // Afficher_pile_statique_generique(deckMelange,pfAfficheCarte);
+    Afficher_pile_statique_generique(deckMelange,pfAfficheCarte);
+}
 
+void testRand_min_max(){
+for (int i=0;i<1000;i++){
+        int i =rand_min_max(0,51);
+    printf("%i\n",i);
+}
 }
 
 int main()
 {
-testCreationDeck();
+    testCreationDeck();
 }
 
 void testJoueur()

@@ -70,6 +70,10 @@ PokerConsole/Phase.c
 PokerConsole/main.c
 *.o
 PokerConsole/PokerConsole.layout
+<<<<<<< HEAD
 PokerConsole/PokerConsole.cbp
 *.layout
 PokerConsole/PokerConsole.layout
+=======
+PokerConsole/obj/Debug/main.o
+>>>>>>> origin/master
